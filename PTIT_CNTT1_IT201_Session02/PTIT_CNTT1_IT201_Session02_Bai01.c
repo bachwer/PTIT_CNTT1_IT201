@@ -16,13 +16,14 @@ int main(){
  for(int i = 0; i < n; i++){
   if(arr[i] == target){
     printf("Tim thay");
+      free(arr);
     return 0;
   }
  }
 
  printf("ko tim that");
 
-  
+  free(arr);
 
 
 

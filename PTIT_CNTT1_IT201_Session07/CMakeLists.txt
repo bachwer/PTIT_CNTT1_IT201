@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+project(MultiTargetProject C)
+
+set(CMAKE_C_STANDARD 11)
+
+
+
+add_executable(PTIT_CNTT1_IT201_Session07_bai08 PTIT_CNTT1_IT201_Session07_bai08.c)
+add_executable(PTIT_CNTT1_IT201_Session07_bai05 PTIT_CNTT1_IT201_Session07_bai05.c)

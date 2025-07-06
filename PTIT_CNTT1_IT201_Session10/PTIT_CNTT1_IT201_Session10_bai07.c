@@ -81,7 +81,7 @@ int main() {
         tail -> next = newNode;
         tail = newNode;
     }
-    Bachqvsb24Dtcn077
+
 
     printNode(head);
     sortListAscending(head);

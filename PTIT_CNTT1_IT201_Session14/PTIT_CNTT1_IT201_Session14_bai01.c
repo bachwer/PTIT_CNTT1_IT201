@@ -21,7 +21,7 @@ Node *createNode(const int val) {
     newNode -> next = NULL;
     return newNode;
 }
-Stack *createStack(const int size) {
+Stack *createStack() {
     Stack *newStack = (Stack *)malloc(sizeof(Stack));
     newStack -> top = NULL;
     return newStack;
@@ -68,7 +68,7 @@ void printStackNode(const Node *head) {
 
 int main() {
 
-    Stack *node = createStack(5);
+    Stack *node = createStack();
 
     for (int i = 0; i < 5; i++) {
         push(node, i + 1);

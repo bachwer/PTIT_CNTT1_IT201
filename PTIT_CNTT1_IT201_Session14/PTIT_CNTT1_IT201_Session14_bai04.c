@@ -20,7 +20,7 @@ Node *createNode(const int val) {
     newNode -> next = NULL;
     return newNode;
 }
-Stack *createStack(const int size) {
+Stack *createStack() {
     Stack *newStack = (Stack *)malloc(sizeof(Stack));
     newStack -> top = NULL;
     return newStack;
@@ -50,7 +50,7 @@ void printList(const Node *head) {
 
 
 int main() {
-    Stack *note = createStack(5);
+    Stack *note = createStack();
     printf("Enter number note to add in Stack: ");
     int n;
     scanf("%d", &n);

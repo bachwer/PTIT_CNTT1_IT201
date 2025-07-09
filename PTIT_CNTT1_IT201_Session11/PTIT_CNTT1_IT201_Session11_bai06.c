@@ -19,7 +19,7 @@ Node* createNode(const int data) {
     return newNode;
 }
 
-void printList(Node *head) {
+void printList(const Node *head) {
     if (head == NULL) {
         printf("NULL \n");
         return;

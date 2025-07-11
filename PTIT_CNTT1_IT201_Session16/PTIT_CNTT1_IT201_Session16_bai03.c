@@ -1,0 +1,112 @@
+//
+// Created by Macbook on 11/07/2025.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Node {
+    int data;
+    struct Node* next;
+}Node;
+typedef struct {
+    Node *front;
+    Node *rear;
+}Queue;
+
+Node *createNode(const int val) {
+    Node *newNode= (Node *)malloc(sizeof(Node));
+    newNode -> data = val;
+    newNode -> next = NULL;
+    return newNode;
+}
+Queue *createQue() {
+    Queue *newQue = (Queue *)malloc(sizeof(Queue));
+    if (newQue == NULL) {
+        return NULL;
+    }
+    newQue -> front = newQue -> rear = NULL;
+    return newQue;
+}
+
+int isEmpty(const Queue *q) {
+    return q -> front == NULL;
+}
+
+void endQue(Queue *q, const int val) {
+    Node *newNode = createNode(val);
+
+    if (q -> front == NULL) {
+        q -> front = q -> rear = newNode;
+        return;
+    }
+
+    q -> rear -> next = newNode;
+    q -> rear = newNode;
+}
+ int delQUe(Queue *q) {
+    if (isEmpty(q)) {
+        printf("Queue is empty\n");
+        return -1;
+    }
+    const int temp = q -> front -> data;
+    Node * tempNode = q -> front;
+    q -> front = q -> front -> next;
+    free(tempNode);
+    if (q -> front == NULL) {
+        q -> rear == NULL;
+    }
+    return temp;
+}
+
+int peek(const Queue *q) {
+    if (isEmpty(q)) {
+        printf("Queue is empty\n");
+        return -1;
+    }
+    return q -> front -> data;
+}
+
+void freeQue(Queue *q) {
+    while (!isEmpty(q)) {
+        delQUe(q);
+    }
+    free(q);
+}
+
+int main() {
+    Queue *q = createQue();
+    if (q == NULL) {
+        return 1;
+    }
+    endQue(q,1);
+    endQue(q,2);
+    endQue(q,3);
+    endQue(q,4);
+
+
+    const int n = delQUe(q);
+    if (n == -1) {
+        return -1;
+    }
+    printf("%d", n);
+    freeQue(q);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

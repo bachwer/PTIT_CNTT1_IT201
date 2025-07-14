@@ -187,12 +187,73 @@ int main() {
                 SumOfCreditHours(nodeSubject);
                 break;
             case 6:
+                NodeSubjectDone = addSubCompleted(&nodeSubject,NodeSubjectDone);
                 break;
             case 7:
+                if (nodeSubject != NULL) {
+                    Node *temp = nodeSubject;
+                    nodeSubject = nodeSubject->next;
+                    free(temp->sub.code);
+                    free(temp->sub.name);
+                    free(temp);
+                    printf("Hoan tac thao tac them mon gan nhat thanh cong.\n");
+                } else {
+                    printf("Khong co mon hoc de hoan tac.\n");
+                }
                 break;
             case 8:
+            {
+                int choice;
+                static Queue *studentQueue = NULL;
+                if (studentQueue == NULL) {
+                    studentQueue = createQue();
+                }
+                do {
+                    printf("\n===== QUAN LY SINH VIEN CHO DANG KY =====\n");
+                    printf("1. Them sinh vien vao hang doi\n");
+                    printf("2. Phuc vu sinh vien dau tien\n");
+                    printf("3. Hien thi danh sach sinh vien dang cho\n");
+                    printf("4. Thoat\n");
+                    printf("Nhap lua chon: ");
+                    scanf("%d", &choice);
+                    getchar(); // consume newline
+
+                    if (choice == 1) {
+                        char name[100];
+                        char id[100];
+                        printf("Nhap ma sinh vien: ");
+                        fgets(id, sizeof(id), stdin);
+                        id[strcspn(id, "\n")] = '\0';
+                        printf("Nhap ten sinh vien: ");
+                        fgets(name, sizeof(name), stdin);
+                        name[strcspn(name, "\n")] = '\0';
+                        endQue(studentQueue, id, name, 0);
+                        printf("Da them sinh vien vao hang doi.\n");
+                    } else if (choice == 2) {
+                        Subject sv = delQue(studentQueue);
+                        if (sv.code != NULL) {
+                            printf("Phuc vu sinh vien: %s - %s\n", sv.code, sv.name);
+                        }
+                    } else if (choice == 3) {
+                        Node *cur = studentQueue->front;
+                        int i = 1;
+                        if (cur == NULL) {
+                            printf("Khong co sinh vien nao trong hang doi.\n");
+                        }
+                        while (cur != NULL) {
+                            printf("%d. %s - %s\n", i++, cur->sub.code, cur->sub.name);
+                            cur = cur->next;
+                        }
+                    }
+                } while (choice != 4);
+            }
+            break;
+            case 9:
                 printf("Exit\n");
                 break;
+
+
+
             default:
                 printf("invalid\n");
 

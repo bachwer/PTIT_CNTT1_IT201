@@ -31,12 +31,11 @@ void preOrder(const Node *root) {
     preOrder(root -> right);
 }
 int main() {
-    Node *root = createNode(2);
-    root -> left  =  createNode(3);
-    root -> right = createNode(4);
-    root -> left -> left =  createNode(5);
 
-    preOrder(root);
+    printf("Enter: ");
+    int n;
+    scanf("%d", &n);
+    Node *root = createNode(n);
 
     free(root);
 

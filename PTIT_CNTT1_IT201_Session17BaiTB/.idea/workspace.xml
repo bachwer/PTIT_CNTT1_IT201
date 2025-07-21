@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54879d3d-333b-402e-89d3-f8c9b7e77615" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/baiTH02.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session12/PTIT_CNTT1_IT201_Session12_bai03.c" beforeDir="false" afterPath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session12/PTIT_CNTT1_IT201_Session12_bai03.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session13/PTIT_CNTT1_IT201_Session13_bai05.c" beforeDir="false" afterPath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session13/PTIT_CNTT1_IT201_Session13_bai05.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session14/PTIT_CNTT1_IT201_Session14_bai04.c" beforeDir="false" afterPath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session14/PTIT_CNTT1_IT201_Session14_bai04.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session14_bai04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session15/PTIT_CNTT1_IT201_Session15_bai08.c" beforeDir="false" afterPath="$PROJECT_DIR$/../PTIT_CNTT1_IT201_Session15/PTIT_CNTT1_IT201_Session15_bai08.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baiTH01.c" beforeDir="false" afterPath="$PROJECT_DIR$/baiTH01.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baiTH" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ztpg4parpHu839ngPznxOgTL0Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.baiTH02.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.baiTH2.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.test1.c.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.test2.c.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/Documents/PTIT_CNTT1_IT201-main/PTIT_CNTT1_IT201_Session17BaiTB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="test2.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PTIT_CNTT1_IT201_Session17BaiTB" TARGET_NAME="test2.c" CONFIG_NAME="test2.c">
+      <option name="sourceFile" value="$PROJECT_DIR$/test2.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54879d3d-333b-402e-89d3-f8c9b7e77615" name="Changes" comment="" />
+      <created>1752560332600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752560332600</updated>
+      <workItem from="1752560333932" duration="11481000" />
+      <workItem from="1752572228849" duration="8259000" />
+      <workItem from="1752586340791" duration="53000" />
+      <workItem from="1752586406865" duration="8290000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -20,6 +20,9 @@ Node *createNode(const int val) {
     newNode -> next = NULL;
     return newNode;
 }
+
+
+
 Stack *createStack() {
     Stack *newStack = (Stack *)malloc(sizeof(Stack));
     newStack -> top = NULL;
@@ -39,6 +42,10 @@ int pop(Stack *s) {
     free(temp);
     return val;
 }
+
+
+
+
 void printList(const Node *head) {
     if (head == NULL) {
         printf("NULL\n");
@@ -60,6 +67,8 @@ int main() {
         scanf("%d", &m);
         push(note, m);
     }
+
+    pop(note);
 
     if (note -> top != NULL) {
         printList(note -> top);

@@ -18,7 +18,7 @@ Stack *createStack(int size) {
     s -> maxSize = size;
     return s;
 }
-int isEmpty(Stack *s) {
+int isEmpty(const Stack *s) {
     return s -> top == -1;
 }
 

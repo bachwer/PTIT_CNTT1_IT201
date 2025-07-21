@@ -26,6 +26,8 @@ Queue *createQueue() {
 }
 
 
+
+
 Node *enqueue(Queue *q, const int age, const char name[]) {
     Node *newNode =(Node *)malloc(sizeof(Node));
     newNode -> name = (char *)malloc(strlen(name)*sizeof(char));
@@ -38,9 +40,7 @@ Node *enqueue(Queue *q, const int age, const char name[]) {
     }
     q -> rear -> next = newNode;
     q -> rear = newNode;
-
     return newNode;
-
 }
 
 void dequeue(Queue *q) {
@@ -49,8 +49,6 @@ void dequeue(Queue *q) {
         return;
     }
     Node *temp = q -> front;
-    int age = temp -> age;
-    char *name = temp->name;
     q -> front = q -> front -> next;
     if (q -> front == NULL) {
         q ->rear = NULL;

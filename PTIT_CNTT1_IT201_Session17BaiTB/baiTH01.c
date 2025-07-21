@@ -289,11 +289,6 @@ void SearchSubByName(const Node *subject) {
 
 
 
-
-
-// Thoát chương trình
-
-
 int main() {
 
     Node * Subject = NULL;
@@ -364,7 +359,23 @@ int main() {
 
 
 
-
+void sortList(Node *head) {
+    if (!head) return;
+    int swapped;
+    do {
+        swapped = 0;
+        Node *ptr = head;
+        while (ptr->next) {
+            if (ptr->data > ptr->next->data) {
+                int temp = ptr->data;
+                ptr->data = ptr->next->data;
+                ptr->next->data = temp;
+                swapped = 1;
+            }
+            ptr = ptr->next;
+        }
+    } while (swapped);
+}
 
 
 

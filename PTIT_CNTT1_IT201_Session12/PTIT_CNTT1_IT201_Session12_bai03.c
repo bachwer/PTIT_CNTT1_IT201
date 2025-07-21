@@ -76,3 +76,29 @@ int main() {
 
 
 }
+
+
+void selectionSort(Node* head) {
+    Node* current = head;
+
+    while (current != NULL) {
+        Node* minNode = current;
+        Node* nextNode = current->next;
+
+        while (nextNode != NULL) {
+            if (nextNode->data < minNode->data) {
+                minNode = nextNode;
+            }
+            nextNode = nextNode->next;
+        }
+
+        // Hoán đổi dữ liệu
+        if (minNode != current) {
+            int temp = current->data;
+            current->data = minNode->data;
+            minNode->data = temp;
+        }
+
+        current = current->next;
+    }
+}

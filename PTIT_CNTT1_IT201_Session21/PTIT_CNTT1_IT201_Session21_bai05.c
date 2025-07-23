@@ -50,7 +50,7 @@ int main() {
     addEdge(graph, 2, 3);
     addEdge(graph, 3, 4);
 
-    printGraph(graph, MAX_VERTICES);
+    printG(graph, MAX_VERTICES);
 
     return 0;
 }

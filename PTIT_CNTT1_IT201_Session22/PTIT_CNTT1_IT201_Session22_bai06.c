@@ -57,7 +57,7 @@ void addEdge(Graph *g, const int src, const int dest) {
 void DFS(Graph *g, const int start) {
     g -> visited[start] = 1;
     printf("%d ", start);
-    Node *temp = g -> arr[start].head;
+    const Node *temp = g -> arr[start].head;
     while (temp != NULL) {
         if (!g -> visited[temp -> vertex]) {
             DFS(g, temp -> vertex);
@@ -65,6 +65,7 @@ void DFS(Graph *g, const int start) {
         temp = temp -> next;
     }
 }
+
 int main() {
     int v, e;
     printf("Nhap so dinh (v) va so canh (e): ");
